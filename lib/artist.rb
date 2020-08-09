@@ -29,6 +29,7 @@ class Artist
 
   def genres 
     songs
+    binding.pry
   end
 
 
