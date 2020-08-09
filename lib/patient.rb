@@ -21,12 +21,12 @@ class Patient
   
   
   def appointments 
-    
+    Appointment.select{|appt| appt.patient == self}
   end 
   
   
   def doctors 
-    
+    appointments.collect{|appt| appt.doctor}
   end
   
   
